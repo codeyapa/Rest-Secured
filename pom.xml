@@ -5,7 +5,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>core</module>
-		<module>autoconfigure</module>
+		<module>auto-configure</module>
 		<module>starter</module>
 	</modules>
 	<parent>

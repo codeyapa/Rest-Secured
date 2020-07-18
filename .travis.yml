@@ -1,8 +1,15 @@
 language: java
 jdk:
-  - openjdk8
-
-script: mvn clean install
-
+- openjdk8
 notifications:
   email: shubhamgoyalnitc@gmail.com
+
+addons:
+  sonarcloud:
+    organization: "codeyapa"
+    token:
+      secure: b+Ok6IXiQVnSXiTAPx25ys2kK0OUToH6ihoAP+3kYzFrmxMHrEaonsAzwhjjAOZLdpGn9Vw9swPlwjCfxbpKgAmw0cjwoYVtW/pWZOUTLiMcNtpOVnFKLay+pMlggy+hCArbpWfHJ0PvP34FQFKugbpPFsspk9zTn2TlvSO0o1ARIAXXFl55Wpipa7IUhEpvOsYC4W9vgP32WT4xmqVnO940shvkZnf8KP9GqUefaaZ5WXc0ucYJc48WrtRc3OsWqg5PwAiESR7SXkfHitqR+0aIM3wGvaSebNVyLzxbYZrB+BhaLH1NLGN987wC0IyWvK2p37ILNVTa6MUAzuNPTPRZjwT+Ftk3fComckC517s69og788Rz438VQK5wOzmz9+FPorykaolT0/k/yBaSSzSPNJWNg0RgtVzwWEN6yBXAfEn3xHcqVMgn9xuqyJHHmr/KrxFMFX6gAMKqNdzv++5R4rzcvlbgyk1iF1MlbhfTia4QwGupRWwSWY8JIgybkHj1TiBVehvFhl3VsoDOfqOPT0IYsdWtp0pPVrhsITCY/iW9S3ixaU/07/izTfWd50PwULrrRt10t5vW/4YwEPD3jkdaluGEeT47sn/HZWuOr+4vqtTP2OP2gWX1BhNWVvL8d45dT8Y2ByW+VRHRtbIo50gQb2xcMr+kw9qrRb0=
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar

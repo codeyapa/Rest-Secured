@@ -5,3 +5,4 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=codeyapa_Rest-Secured&metric=alert_status)](https://sonarcloud.io/dashboard?id=codeyapa_Rest-Secured)
 [![codecov](https://codecov.io/gh/codeyapa/Rest-Secured/branch/master/graph/badge.svg)](https://codecov.io/gh/codeyapa/Rest-Secured)
 [![Chat on Slack](https://img.shields.io/badge/chat-on%20slack-7A5979.svg)](https://codeyapa.slack.com/messages/rest-secured)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/codeyapa/Rest-Secured/blob/master/CONTRIBUTING.md)

@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.codeyapa.rest.secured.autoconfiguration.SecurityAutoConfiguration

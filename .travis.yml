@@ -4,3 +4,6 @@ jdk:
 script: mvn clean install
 notifications:
   email: shubhamgoyalnitc@gmail.com
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

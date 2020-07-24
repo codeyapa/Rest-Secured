@@ -24,6 +24,9 @@
         <mvn.jacoco.version>0.8.4</mvn.jacoco.version>
         <nimbus-jose-jwt.version>8.14.1</nimbus-jose-jwt.version>
         <lombok.version>1.16.16</lombok.version>
+        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.reportPath>${project.build.directory}/jacoco.exec</sonar.jacoco.reportPath>
         <junit.jupiter.version>5.5.1</junit.jupiter.version>
     </properties>
 
@@ -49,6 +52,7 @@
                 <version>${lombok.version}</version>
             </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <build>

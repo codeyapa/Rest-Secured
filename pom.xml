@@ -23,6 +23,11 @@
         <spring.boot.version>2.1.6.RELEASE</spring.boot.version>
         <mvn.jacoco.version>0.8.4</mvn.jacoco.version>
         <nimbus-jose-jwt.version>8.14.1</nimbus-jose-jwt.version>
+        <lombok.version>1.16.16</lombok.version>
+        <sonar.core.codeCoveragePlugin>jacoco</sonar.core.codeCoveragePlugin>
+        <sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+        <sonar.jacoco.reportPath>${project.build.directory}/jacoco.exec</sonar.jacoco.reportPath>
+        <junit.jupiter.version>5.5.1</junit.jupiter.version>
     </properties>
 
     <dependencyManagement>
@@ -40,7 +45,14 @@
                 <artifactId>nimbus-jose-jwt</artifactId>
                 <version>${nimbus-jose-jwt.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <build>

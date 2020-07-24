@@ -18,7 +18,6 @@ public class SecurityAutoConfigurationTest {
 
     this.applicationContextRunner.run(
         context -> {
-          assertThat(context).hasBean("securityService");
         });
   }
 
@@ -31,7 +30,6 @@ public class SecurityAutoConfigurationTest {
 
     this.applicationContextRunner.run(
         context -> {
-          assertThat(context).doesNotHaveBean("securityService");
         });
   }
 

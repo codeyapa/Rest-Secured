@@ -11,6 +11,16 @@
 
     <artifactId>core</artifactId>
 
+    <properties>
+        <sonar.jacoco.reportPaths>${project.build.directory}/jacoco.exec</sonar.jacoco.reportPaths>
+        <sonar.exclusions>
+            src/main/java/com/codeyapa/rest/secured/core/domain/*
+        </sonar.exclusions>
+        <sonar.coverage.exclusions>
+            src/main/java/com/codeyapa/rest/secured/core/domain/*
+        </sonar.coverage.exclusions>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

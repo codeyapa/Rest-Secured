@@ -4,7 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-@ConfigurationProperties(prefix = "ofs.security")
+@ConfigurationProperties(prefix = "rest.security")
 @Getter
 @Setter
 public class SecurityProperties {

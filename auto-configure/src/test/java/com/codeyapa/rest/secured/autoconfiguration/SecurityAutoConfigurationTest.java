@@ -37,7 +37,7 @@ public class SecurityAutoConfigurationTest {
 
   private String[] properties(boolean enabled) {
     return new String[] {
-      String.format("rest.secured.enabled=%b", enabled),
+      String.format("rest.security.enabled=%b", enabled),
     };
   }
 }
